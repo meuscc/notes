@@ -1,0 +1,7 @@
+[package]
+name = "ruster"
+version = "0.1.0"
+authors = ["shihai5 <shihai@pandu.ie>"]
+edition = "2018"
+
+[dependencies]
