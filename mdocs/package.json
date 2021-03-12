@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "vite"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "vite": "^2.0.5"
+  }
+}
