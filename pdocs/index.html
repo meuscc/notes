@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-hans" class="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>我的笔记</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typo.css@2.1.2/typo.min.css" />
+    <!--    <link-->
+    <!--      rel="stylesheet"-->
+    <!--      href="https://cdn.jsdelivr.net/npm/latex.css@1.5.0/lang/zh-hans.css"-->
+    <!--    />-->
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latex.css@1.5.0/style.min.css" />-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.7/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/common-tags@1.8.0/dist/common-tags.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-typescript.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-julia.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-rust.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-python.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-c.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-cpp.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-go.min.js"></script>
+  </head>
+  <body>
+    <div id="root" class="article">
+      <h1>基本类型的</h1>
+      <pre><code class="language-cpp">int main()
+{
+    return 0;
+}</code></pre>
+      <pre><code class="language-javascript">_shot = 12;</code></pre>
+      <pre><code class="language-typescript">_shot: number = 12;</code></pre>
+    </div>
+  </body>
+  <script src="./index.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js"></script>
+  <script>
+    window.renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true },
+      ],
+    });
+  </script>
+  <script></script>
+</html>
