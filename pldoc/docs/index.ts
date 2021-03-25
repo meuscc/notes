@@ -1,8 +1,11 @@
-console.log(222)
-function t(to: number) {
-  return to * 10
-}
+import { onMounted } from 'vue';
 
-setTimeout(() => {
-  document.getElementById('test').style.color = 'blue'
-}, t(100))
+export default {
+  setup() {
+    onMounted(() => {
+      main();
+    });
+  },
+};
+
+function main() {}

@@ -1,0 +1,17 @@
+{
+  "name": "cdocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-i18n": "^8.24.2",
+    "vue-router": "^3.5.1"
+  }
+}
