@@ -1,1 +1,0 @@
-import{o as t,c as e,a as n}from"./app.e1ea3364.js";const a='{"title":"","description":"","frontmatter":{},"relativePath":"math/set/definition.md","lastUpdated":1616607816672}',r={},i=n("p",null,"set theory set deniniton",-1);r.render=function(n,a,r,o,s,d){return t(),e("div",null,[i])};export default r;export{a as __pageData};
