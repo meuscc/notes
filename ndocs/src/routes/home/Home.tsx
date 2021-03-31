@@ -6,6 +6,7 @@ export default function Home() {
     <div>
       <NavLink to={'math'}>math</NavLink>
       <NavLink to={'clang'}>clang</NavLink>
+      <NavLink to={'nsound'}>nsound</NavLink>
     </div>
   );
 }

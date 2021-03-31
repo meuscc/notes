@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export default function Math() {
+export default function MathNav() {
   return (
     <div>
       <NavLink to={'set_theory'}>SetTheory</NavLink>

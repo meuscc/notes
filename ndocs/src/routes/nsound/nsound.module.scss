@@ -1,0 +1,24 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: #95959595;
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.item_active {
+  background-color: #3399ff;
+}
