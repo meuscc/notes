@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function Clang() {
   return (
@@ -12,5 +12,5 @@ export default function Clang() {
       <NavLink to={'julia'}>Julia</NavLink>
       <NavLink to={'python'}>Python</NavLink>
     </div>
-  );
+  )
 }

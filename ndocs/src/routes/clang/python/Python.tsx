@@ -1,5 +1,5 @@
-import React from 'react';
+import React from 'react'
 
 export default function Python() {
-  return <div>Python Theory</div>;
+  return <div>Python Theory</div>
 }

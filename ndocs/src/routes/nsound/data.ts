@@ -50,6 +50,6 @@ const sounds = [
     url:
       'https://meusmedia.oss-cn-chengdu.aliyuncs.com/manual/audio/asoftmurmur/main-whitenoise.mp4',
   },
-];
+]
 
-export { sounds };
+export { sounds }

@@ -1,5 +1,5 @@
-import React from 'react';
+import React from 'react'
 
 export default function SetTheory() {
-  return <div>Set Theory</div>;
+  return <div>Set Theory</div>
 }

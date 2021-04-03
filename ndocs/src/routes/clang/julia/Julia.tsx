@@ -1,5 +1,5 @@
-import React from 'react';
+import React from 'react'
 
 export default function Julia() {
-  return <div>Julia Theory</div>;
+  return <div>Julia Theory</div>
 }
