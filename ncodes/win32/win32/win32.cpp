@@ -75,10 +75,17 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
   // 主窗口消息循环
   MSG msg;
-  while (GetMessage(&msg, nullptr, 0, 0)) {
-    TranslateMessage(&msg);
-    DispatchMessage(&msg);
+  while (1) {
+    if (PeekMessage(&msg, NULL, 0, 0, PM_NOREMOVE)) {
+      if (GetMessage(&msg, nullptr, 0, 0)) {
+        TranslateMessage(&msg);
+        DispatchMessage(&msg);
+      } else {
+        return (int)msg.wParam;
+      }
+    } else {
+      // 空闲处理
+    }
   }
-
   return (int)msg.wParam;
 }
