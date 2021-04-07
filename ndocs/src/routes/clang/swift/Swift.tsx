@@ -1,5 +1,5 @@
-import React from 'react';
+import React from 'react'
 
 export default function Swift() {
-  return <div>Swift Theory</div>;
+  return <div>Swift Theory</div>
 }

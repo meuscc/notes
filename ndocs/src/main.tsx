@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { HashRouter as Router } from 'react-router-dom';
-import { Root } from './containers/Root';
-import './styles/index.scss';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { HashRouter as Router } from 'react-router-dom'
+import { Root } from './containers/Root'
+import './styles/index.scss'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,4 +11,4 @@ ReactDOM.render(
     </Router>
   </React.StrictMode>,
   document.getElementById('root'),
-);
+)

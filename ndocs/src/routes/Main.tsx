@@ -1,10 +1,10 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 
-import Home from './home';
-import Math from './math';
-import Clang from './clang';
-import Nsound from './nsound';
+import Home from './home'
+import Math from './math'
+import Clang from './clang'
+import Nsound from './nsound'
 
 export default function MainLayout(): JSX.Element {
   return (
@@ -16,5 +16,5 @@ export default function MainLayout(): JSX.Element {
         <Route path="nsound/*" element={<Nsound />} />
       </Routes>
     </div>
-  );
+  )
 }

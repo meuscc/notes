@@ -1,8 +1,8 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Math from './MathNav';
-import SetTheory from './set_theory/SetTheory';
-import MathAnalysis from './math_analysis';
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Math from './MathNav'
+import SetTheory from './set_theory/SetTheory'
+import MathAnalysis from './math_analysis'
 
 export default function () {
   return (
@@ -13,5 +13,5 @@ export default function () {
         <Route path="/math_analysis/*" element={<MathAnalysis />} />
       </Routes>
     </div>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function MathNav() {
   return (
@@ -7,5 +7,5 @@ export default function MathNav() {
       <NavLink to={'set_theory'}>SetTheory</NavLink>
       <NavLink to={'math_analysis'}>MathAnalysis</NavLink>
     </div>
-  );
+  )
 }

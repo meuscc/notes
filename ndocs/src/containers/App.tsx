@@ -1,6 +1,6 @@
-import React from 'react';
-import { Router } from '~/routes/Router';
+import React from 'react'
+import { Router } from '~/routes/Router'
 
 export const App = (): JSX.Element => {
-  return <Router />;
-};
+  return <Router />
+}

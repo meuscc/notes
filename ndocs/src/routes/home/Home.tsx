@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function Home() {
   return (
@@ -8,5 +8,5 @@ export default function Home() {
       <NavLink to={'clang'}>clang</NavLink>
       <NavLink to={'nsound'}>nsound</NavLink>
     </div>
-  );
+  )
 }
