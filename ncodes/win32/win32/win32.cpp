@@ -10,7 +10,15 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam,
                          LPARAM lParam) {
   switch (message) {
     case WM_CREATE: {
-      MessageBox(NULL, L"sdfs", L"sdfsf", MB_OK);
+      // MessageBox(NULL, L"sdfs", L"sdfsf", MB_OK);
+      LPCREATESTRUCT pcs = (LPCREATESTRUCT)lParam;
+      CreateWindow(L"button", L"普通按钮",
+                   WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 30, 30, 80, 50, hWnd,
+                   HMENU(1000), pcs->hInstance, NULL);
+
+      CreateWindow(L"button", L"单选按钮",
+                   WS_CHILD | WS_VISIBLE | BS_RADIOBUTTON, 130, 130, 80, 50,
+                   hWnd, HMENU(1001), pcs->hInstance, NULL);
     }
     case WM_COMMAND: {
       int wmId = LOWORD(wParam);
@@ -45,6 +53,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam,
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                       _In_opt_ HINSTANCE hPrevInstance, _In_ LPWSTR lpCmdLine,
                       _In_ int nCmdShow) {
+  SetProcessDPIAware();
   // 注册主窗口类
   WNDCLASSEXW wcex;
   wcex.cbSize = sizeof(WNDCLASSEX);
