@@ -1,29 +1,11 @@
-import { LitElement, html, css } from 'lit'
-import { customElement, property } from 'lit/decorators.js'
+import { Router } from '@vaadin/router'
+import './pages/index'
+import './pages/about'
 
-@customElement('u-btn')
-export class SimpleGreeting extends LitElement {
-  // Define scoped styles right with your component, in plain CSS
-  static styles = css`
-    :host {
-      color: green;
-    }
-  `
+const outlet = document.getElementById('root')
+const router = new Router(outlet)
 
-  // Declare reactive properties
-  @property()
-  name?: string = 'World'
-
-  @property()
-  count: number = 0
-
-  handleClick() {
-    this.count++
-  }
-
-  // Render the UI as a function of component state
-  render() {
-    return html`<p>Hello, ${this.name} ${this.count}</p>
-      <button @click="${this.handleClick}">Click</button>`
-  }
-}
+router.setRoutes([
+  { path: '/', component: 'page-index' },
+  { path: '/about', component: 'page-about' },
+])

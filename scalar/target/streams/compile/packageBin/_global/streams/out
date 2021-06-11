@@ -1,0 +1,13 @@
+[debug] Packaging D:\Wss\meus.cc\notes\scalar\target\scala-3.0.0\scala3-simple_3-0.1.0.jar ...
+[debug] Input file mappings:
+[debug] 	hello.class
+[debug] 	  D:\Wss\meus.cc\notes\scalar\target\scala-3.0.0\classes\hello.class
+[debug] 	hello.tasty
+[debug] 	  D:\Wss\meus.cc\notes\scalar\target\scala-3.0.0\classes\hello.tasty
+[debug] 	Main$package$.class
+[debug] 	  D:\Wss\meus.cc\notes\scalar\target\scala-3.0.0\classes\Main$package$.class
+[debug] 	Main$package.class
+[debug] 	  D:\Wss\meus.cc\notes\scalar\target\scala-3.0.0\classes\Main$package.class
+[debug] 	Main$package.tasty
+[debug] 	  D:\Wss\meus.cc\notes\scalar\target\scala-3.0.0\classes\Main$package.tasty
+[debug] Done packaging.

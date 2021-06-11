@@ -1,18 +1,8 @@
 // @ts-ignore
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
-import legacy from '@vitejs/plugin-legacy'
 
 export default defineConfig({
-  plugins: [
-    legacy({
-      targets: ['ie >= 11'],
-      additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
-    }),
-  ],
-  build: {
-    target: ['es2015'],
-  },
   css: {
     preprocessorOptions: {
       scss: {

@@ -45,19 +45,11 @@ export default function () {
 
   return (
     <div className="math doc-level-2">
-      <button onClick={() => setCheck(v => !v)}>ddd</button>
-      <If v={check} el={<div>11111111111</div>} elseEl={<div>000000</div>} />
-      <Not v={check} el={<div>22222222222</div>} />
       <Mdx />
       <div className={styles.list}>
         <For data={sounds} render={Trigger(currentSounds, handleTrackClick)} />
       </div>
-      <Switch
-        cases={[
-          [false, <div>133333444</div>],
-          [true, <div>2</div>],
-        ]}
-      />
+
       <For data={currentSounds} render={Audio} />
     </div>
   )
