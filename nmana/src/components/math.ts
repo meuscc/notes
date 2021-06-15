@@ -1,29 +1,58 @@
-import { LitElement, html, css } from 'lit'
+import { LitElement, html, css, unsafeCSS } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
+import { unsafeHTML } from 'lit/directives/unsafe-html.js'
+import style from 'katex/dist/katex.min.css'
 
-@customElement('u-btn')
-export class SimpleGreeting extends LitElement {
-  // Define scoped styles right with your component, in plain CSS
-  static styles = css`
-    :host {
-      color: green;
-    }
-  `
+declare var katex: any
 
-  // Declare reactive properties
+const katexStyle = css`
+  ${unsafeCSS(style)}
+`
+
+@customElement('m-b')
+export class math extends LitElement {
+  static styles = [
+    katexStyle,
+    css`
+      :host {
+        display: block;
+      }
+    `,
+  ]
+
   @property()
-  name?: string = 'World'
+  m: string = ''
 
-  @property()
-  count: number = 0
-
-  handleClick() {
-    this.count++
-  }
-
-  // Render the UI as a function of component state
   render() {
-    return html`<p>Hello, ${this.name} ${this.count}</p>
-      <button @click="${this.handleClick}">Click</button>`
+    return html`${unsafeHTML(
+      katex.renderToString(this.m, {
+        throwOnError: false,
+        displayMode: true,
+      }),
+    )}`
+  }
+}
+
+@customElement('m-i')
+export class Math extends LitElement {
+  static styles = [
+    katexStyle,
+    css`
+      :host {
+        display: inline-block;
+      }
+    `,
+  ]
+
+  @property()
+  m: string = ''
+
+  render() {
+    return html`${unsafeHTML(
+      katex.renderToString(this.m, {
+        throwOnError: false,
+        displayMode: false,
+      }),
+    )}`
   }
 }

@@ -7,7 +7,6 @@ import { sounds } from './data'
 export class SimpleGreeting extends LitElement {
   static styles = css`
     :host {
-      color: green;
     }
     .sounds-ctn {
       display: flex;
@@ -54,6 +53,19 @@ export class SimpleGreeting extends LitElement {
   // Render the UI as a function of component state
   render() {
     return html`
+      <div>
+        <m-b m="f(x) = x^2"></m-b>
+        <m-i m="f(x) = x^2"></m-i>
+        <c-b
+          c="${`
+            const dd = 123;
+            
+            function c() {
+              return 23;
+            }`}"
+        ></c-b>
+        <c-i c="const a = 123"></c-i>
+      </div>
       <div class="sounds-ctn">
         ${sounds.map(
           s =>

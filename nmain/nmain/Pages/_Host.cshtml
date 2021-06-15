@@ -22,26 +22,37 @@
 <body>
 <component type="typeof(App)" render-mode="ServerPrerendered"/>
 
-<script src="_framework/blazor.server.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
-  <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          setTimeout(() => {
-                      renderMathInElement(document.body, {
-                        // customised options
-                        // • auto-render specific keys, e.g.:
-                        delimiters: [
-                            {left: '$$', right: '$$', display: true},
-                            {left: '$', right: '$', display: false},
-                            {left: '\\(', right: '\\)', display: false},
-                            {left: '\\[', right: '\\]', display: true}
-                        ],
-                        // • rendering keys, e.g.:
-                        throwOnError : false
-                      });
-          }, 2000)
+<script src="_framework/blazor.server.js" autostart="false"></script>
+
+    <script>
+      Blazor.start().then(function () {
+        var customScript1 = document.createElement('script');
+        var customScript2 = document.createElement('script');
+        customScript1.setAttribute('src', 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js');
+        customScript2.setAttribute('src', 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js');
+        document.head.appendChild(customScript1);
+        document.head.appendChild(customScript2);
+        customScript2.onload  = () => {
+
+
+        renderMathInElement(document.body, {
+
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : true
+        });
+        }
+
       });
-  </script>
+    </script>
+
+
 </body>
 </html>
