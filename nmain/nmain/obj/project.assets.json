@@ -9,30 +9,34 @@
   },
   "packageFolders": {
     "C:\\Users\\ysh35\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Wss\\meus.cc\\notes\\nmain\\nmain\\nmain.csproj",
+      "projectUniqueName": "D:\\Wss\\meuscc\\notes\\nmain\\nmain\\nmain.csproj",
       "projectName": "nmain",
-      "projectPath": "D:\\Wss\\meus.cc\\notes\\nmain\\nmain\\nmain.csproj",
+      "projectPath": "D:\\Wss\\meuscc\\notes\\nmain\\nmain\\nmain.csproj",
       "packagesPath": "C:\\Users\\ysh35\\.nuget\\packages\\",
-      "outputPath": "D:\\Wss\\meus.cc\\notes\\nmain\\nmain\\obj\\",
+      "outputPath": "D:\\Wss\\meuscc\\notes\\nmain\\nmain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\ysh35\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://aka.ms/maui-preview/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
