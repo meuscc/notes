@@ -23,11 +23,11 @@ const tpl = html`
         }`}"
   ></c-b>
   <c-b
-    l="rust"
+    l="cpp"
     c="${`
-        const dd = 123;
+        int dd = 123;
         
-        function c() {
+        fn c() {
           return 23;
         }`}"
   ></c-b>
