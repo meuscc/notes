@@ -1,7 +1,6 @@
 ## vite-pages app starter
 
-This is a demo project for [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages).
-This project demonstrate how to develop a React app using [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages) as framework.
+This is a demo project for [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages). This project demonstrate how to develop a React app using [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages) as framework.
 
 # How to use
 

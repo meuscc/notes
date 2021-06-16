@@ -23,14 +23,15 @@ export class math extends LitElement {
   @property()
   c: string = ''
 
+  @property()
+  l: string = 'javascript'
+
   render() {
     let trimmed = this.c.replace('\n', '')
     const match = trimmed.match(/\s+/)
     trimmed = trimmed.replaceAll(match?.[0] ?? '', '')
-    return html`<pre
-      class="language-${'javascript'}"
-    ><code class="language-${'javascript'}">${unsafeHTML(
-      Prism.highlight(trimmed, Prism.languages.javascript, 'javascript'),
+    return html`<pre class="language-${this.l}"><code class="language-${this.l}">${unsafeHTML(
+      Prism.highlight(trimmed, Prism.languages[this.l], this.l),
     )}</code></pre>`
   }
 }
