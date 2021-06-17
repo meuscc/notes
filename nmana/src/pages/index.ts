@@ -3,16 +3,13 @@ import { customElement, property } from 'lit/decorators.js'
 
 import { sounds } from './data'
 
-const markdown = html
-
-const b = markdown`
-### sdfsd
-
-- sdf
-`
-
 const tpl = html`
   <m-b m="f(x) = x^2"></m-b>
+  <m-b
+    m="
+c = \\pm\\sqrt{a^2 + b^2}
+"
+  ></m-b>
   <m-i m="f(x) = x^2"></m-i>
   <c-b
     c="${`

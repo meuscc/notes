@@ -24,3 +24,4 @@ D:\Wss\meus.cc\notes\nmain\nmain\obj\Debug\net6.0\nmain.dll
 D:\Wss\meus.cc\notes\nmain\nmain\obj\Debug\net6.0\ref\nmain.dll
 D:\Wss\meus.cc\notes\nmain\nmain\obj\Debug\net6.0\nmain.pdb
 D:\Wss\meus.cc\notes\nmain\nmain\obj\Debug\net6.0\nmain.genruntimeconfig.cache
+D:\Wss\meus.cc\notes\nmain\nmain\obj\Debug\net6.0\scopedcss\Pages\index.razor.rz.scp.css

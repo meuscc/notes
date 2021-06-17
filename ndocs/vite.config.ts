@@ -18,4 +18,7 @@ export default defineConfig({
       rehypePlugins: [katex, prism],
     }),
   ],
+  server: {
+    port: 4000,
+  },
 })
