@@ -24,6 +24,7 @@ D:\Wss\meus.cc\notes\nmain\nmain\obj\Debug\net6.0\nmain.dll
 D:\Wss\meus.cc\notes\nmain\nmain\obj\Debug\net6.0\ref\nmain.dll
 D:\Wss\meus.cc\notes\nmain\nmain\obj\Debug\net6.0\nmain.pdb
 D:\Wss\meus.cc\notes\nmain\nmain\obj\Debug\net6.0\nmain.genruntimeconfig.cache
+<<<<<<< HEAD
 D:\Wss\meuscc\notes\nmain\nmain\obj\Debug\net6.0\nmain.csproj.AssemblyReference.cache
 D:\Wss\meuscc\notes\nmain\nmain\obj\Debug\net6.0\nmain.GeneratedMSBuildEditorConfig.editorconfig
 D:\Wss\meuscc\notes\nmain\nmain\obj\Debug\net6.0\nmain.AssemblyInfoInputs.cache
@@ -50,3 +51,6 @@ D:\Wss\meuscc\notes\nmain\nmain\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.
 D:\Wss\meuscc\notes\nmain\nmain\obj\Debug\net6.0\scopedcss\bundle\nmain.styles.css
 D:\Wss\meuscc\notes\nmain\nmain\obj\Debug\net6.0\scopedcss\projectbundle\nmain.bundle.scp.css
 D:\Wss\meuscc\notes\nmain\nmain\obj\Debug\net6.0\nmain.genruntimeconfig.cache
+=======
+D:\Wss\meus.cc\notes\nmain\nmain\obj\Debug\net6.0\scopedcss\Pages\index.razor.rz.scp.css
+>>>>>>> 21351e954837c4b9b9e50695c90a6cae01416435

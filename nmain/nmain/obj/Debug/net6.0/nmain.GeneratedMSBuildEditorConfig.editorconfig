@@ -26,11 +26,15 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [d:/Wss/meuscc/notes/nmain/nmain/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [d:/Wss/meuscc/notes/nmain/nmain/Shared/SurveyPrompt.razor]
+=======
+[d:/Wss/meus.cc/notes/nmain/nmain/Shared/SurveyPrompt.razor]
+>>>>>>> 21351e954837c4b9b9e50695c90a6cae01416435
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -38,7 +42,15 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [d:/Wss/meuscc/notes/nmain/nmain/Shared/MainLayout.razor]
+=======
+[d:/Wss/meus.cc/notes/nmain/nmain/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-a3bzsu9x60
+
+[d:/Wss/meus.cc/notes/nmain/nmain/Shared/MainLayout.razor]
+>>>>>>> 21351e954837c4b9b9e50695c90a6cae01416435
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-inro0cjpqs
 

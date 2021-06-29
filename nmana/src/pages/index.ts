@@ -3,11 +3,38 @@ import { customElement, property } from 'lit/decorators.js'
 
 import { sounds } from './data'
 
+const tpl = html`
+  <m-b m="f(x) = x^2"></m-b>
+  <m-b
+    m="
+c = \\pm\\sqrt{a^2 + b^2}
+"
+  ></m-b>
+  <m-i m="f(x) = x^2"></m-i>
+  <c-b
+    c="${`
+        const dd = 123;
+        
+        function c() {
+          return 23;
+        }`}"
+  ></c-b>
+  <c-b
+    l="cpp"
+    c="${`
+        int dd = 123;
+        
+        fn c() {
+          return 23;
+        }`}"
+  ></c-b>
+  <c-i c="const a = 123"></c-i>
+`
+
 @customElement('page-index')
 export class SimpleGreeting extends LitElement {
   static styles = css`
     :host {
-      color: green;
     }
     .sounds-ctn {
       display: flex;
@@ -54,6 +81,7 @@ export class SimpleGreeting extends LitElement {
   // Render the UI as a function of component state
   render() {
     return html`
+      ${tpl}
       <div class="sounds-ctn">
         ${sounds.map(
           s =>
