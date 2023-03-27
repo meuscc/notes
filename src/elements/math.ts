@@ -21,15 +21,13 @@ export class MathBlock extends LitElement {
   @property()
   m?: string;
   @property()
-  name = "Worldddddsdfsdfsdfsd";
+  name = "";
 
   // createRenderRoot() {
   //   return this;
   // }
   constructor() {
     super();
-    console.log(this.name);
-    console.log(23233334);
   }
 
   override render() {
