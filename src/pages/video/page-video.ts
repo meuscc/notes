@@ -2,7 +2,7 @@ import { LitElement, html, css } from "lit";
 
 // const youtubeVideoLinks = ["https://www.youtube.com/watch?v=XFkzRNyygfk"];
 
-const ws = new WebSocket("ws://localhost:1987");
+const ws = new WebSocket("ws://localhost:1993");
 
 ws.onopen = () => {
   ws.send("niasfs ");

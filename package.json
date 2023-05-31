@@ -12,6 +12,7 @@
     "build": "tsc && vite build"
   },
   "dependencies": {
+    "futu-api": "^7.1.3308",
     "lit": "^2.7.4"
   },
   "devDependencies": {
