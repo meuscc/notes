@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit";
-import { customElement } from "lit/decorators.js";
+import { customElement, property } from "lit/decorators.js";
 import { unsafeHTML } from "lit/directives/unsafe-html.js";
 
 declare var Prism: any;
@@ -29,23 +29,15 @@ export class CodeBlock extends LitElement {
       }
     `,
   ];
-  static properties = {
-    c: { type: String },
-    l: { type: String },
-  };
 
-  // @property({ type: String })
+  @property()
   c: string = "";
-  //
-  // @property({ type: String })
+
+  @property()
   l: string = "javascript";
 
-  // createRenderRoot() {
-  //   return this;
-  // }
-
   render() {
-    let trimmed = this.c;
+    let trimmed = this.c ?? this.innerHTML;
 
     if (trimmed.indexOf("\n") === 0) {
       trimmed = trimmed.replace("\n", "");
@@ -60,8 +52,44 @@ export class CodeBlock extends LitElement {
   }
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    "c-b": CodeBlock;
+@customElement("c-i")
+export class CodeInline extends LitElement {
+  static styles = [
+    prismStyle,
+    // language=css
+    css`
+      :host {
+        display: inline;
+      }
+      pre[class*="language-"] {
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        display: inline;
+        padding: 0;
+        margin: 0;
+      }
+      .language-css .token.string,
+      .style .token.string,
+      .token.entity,
+      .token.operator,
+      .token.url {
+        background-color: transparent;
+      }
+    `,
+  ];
+
+  @property()
+  c?: string;
+
+  @property()
+  l: string = "javascript";
+
+  render() {
+    let trimmed = this.c ?? this.innerHTML;
+    console.log(trimmed);
+    return html`<pre class="language-${this.l}"><code class="language-${this
+      .l}">${unsafeHTML(
+      Prism.highlight(trimmed, Prism.languages[this.l], this.l)
+    )}</code></pre>`;
   }
 }

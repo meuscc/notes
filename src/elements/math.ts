@@ -20,15 +20,6 @@ export class MathBlock extends LitElement {
 
   @property()
   m?: string;
-  @property()
-  name = "";
-
-  // createRenderRoot() {
-  //   return this;
-  // }
-  constructor() {
-    super();
-  }
 
   override render() {
     return html`${unsafeHTML(
@@ -52,20 +43,7 @@ export class MathInline extends LitElement {
   ];
 
   @property()
-  name = "Worldddddsdfsdfsdfsd";
-
-  @property()
   m?: string;
-
-  // createRenderRoot() {
-  //   return this;
-  // }
-
-  constructor() {
-    super();
-    console.log(this.name);
-    console.log(23233334);
-  }
 
   override render() {
     return html`${unsafeHTML(
@@ -74,12 +52,5 @@ export class MathInline extends LitElement {
         displayMode: false,
       })
     )}`;
-  }
-}
-
-declare global {
-  interface HTMLElementTagNameMap {
-    "m-b": MathBlock;
-    "m-i": MathInline;
   }
 }

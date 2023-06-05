@@ -22,6 +22,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@11.8.0/lib/browser/math.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@vaadin/router/dist/vaadin-router.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
@@ -33,7 +40,7 @@
     <script src="./src/elements/index.ts" type="module"></script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="app"></div>
   </body>
-  <script src="./src/main.ts" type="module"></script>
+  <script src="./src/index.tsx" type="module"></script>
 </html>
