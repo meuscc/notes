@@ -1,6 +1,6 @@
 export default function NaiveSetTheory() {
   return (
-    <div class="p-20px">
+    <div class="p-20px max-w-950px">
       <h-4>1. 异或</h-4>
       <m-b m="(A \\cap \\overline{B}) \\cup (\\overline{A} \\cap B) = (A \\cup B) \\cap (\\overline{A} \\cup \\overline{B})"></m-b>
       <h-4>2. 同或</h-4>
@@ -29,7 +29,10 @@ export default function NaiveSetTheory() {
       <m-b m="R是S中的传递关系 \\iff (\\forall x)(\\forall y)(\\forall z)((x \\in S \\land y \\in S \\land z \\in S \\land xRy \\land yRz) \\to xRz)"></m-b>
       <h-6>等价关系(自反的, 对称的, 传递的)与划分</h-6>
       <h-6>相容关系(自反的, 对称的)和覆盖</h-6>
+      <h-6>偏序关系(自反的, 反对称的, 传递的)</h-6>
       <h-4>6. 偏序</h-4>
+      <h-6>选择公理 AC1:</h-6>
+      <m-b m="(\\forall F)(\\forall x)(x \\in F \\land (\\exist y)(y \\in x) \\implies (\\exist f)(f(x) \\in x))"></m-b>
     </div>
   );
 }
