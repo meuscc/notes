@@ -33,6 +33,16 @@ export default function NaiveSetTheory() {
       <h-4>6. 偏序</h-4>
       <h-6>选择公理 AC1:</h-6>
       <m-b m="(\\forall F)(\\forall x)(x \\in F \\land (\\exist y)(y \\in x) \\implies (\\exist f)(f(x) \\in x))"></m-b>
+      <h-6></h-6>
+      <h-6>良序定理</h-6>
+      <p>M1 库拉托夫斯基-左恩引理</p>
+      <p>
+        M2: F是一集族, 如果F的每一个链的并集仍是F的元素,
+        则F有关于包含关系的极大元
+      </p>
+      <p>M3 图基引理</p>
+      <h-6>极大原理</h-6>
+      <h-6></h-6>
     </div>
   );
 }
