@@ -4,13 +4,7 @@ const tracks = [
   {
     name: "Shawn Lee ft Bei Bei - The Master Room",
     type: "youtube",
-    youtube_id: "cSbYfbrvu2Y",
-    artist: "Bei Bei",
-  },
-  {
-    name: "Shawn Lee ft Bei Bei - The Master Room",
-    type: "youtube",
-    youtube_id: "cSbYfbrvu2Y",
+    youtube_id: "Y5XLjqQ1-6c",
     artist: "Bei Bei",
   },
   {
